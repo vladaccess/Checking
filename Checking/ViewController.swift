@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 		progressBarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
 		
 		view.addSubview(pauseButton)
-		pauseButton.setTitle("Pause", for: .normal)
+		pauseButton.setTitle("Формы", for: .normal)
 		pauseButton.backgroundColor = .cyan
 		pauseButton.translatesAutoresizingMaskIntoConstraints = false
 		pauseButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
@@ -91,16 +91,17 @@ class ViewController: UIViewController {
 		openModalScreenButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
 		openModalScreenButton.addTarget(nil, action: #selector(onOpenModalScreenButtonDidClick), for: .touchUpInside)
 		
-		view.addSubview(shadowView)
-		shadowView.translatesAutoresizingMaskIntoConstraints = false
-		shadowView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-		shadowView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
-		shadowView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
-		shadowView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+//		view.addSubview(shadowView)
+//		shadowView.translatesAutoresizingMaskIntoConstraints = false
+//		shadowView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+//		shadowView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
+//		shadowView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+//		shadowView.heightAnchor.constraint(equalToConstant: 100).isActive = true
 	}
 	
 	@objc func onPauseButtonDidClick() {
-		progressBarView.pause()
+		let formsVC = FormsViewController()
+		navigationController?.show(formsVC, sender: nil)
 	}
 	
 	@objc func onResumeButtonDidClick() {

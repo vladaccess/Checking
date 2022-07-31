@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B29A5F328B38C0E0004D6E7 /* CashbackBacksideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29A5F228B38C0E0004D6E7 /* CashbackBacksideCardView.swift */; };
 		8B3469B2288C204400503B39 /* ProgressBarSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3469B1288C204400503B39 /* ProgressBarSegment.swift */; };
 		8B3469B4288C208900503B39 /* OnboardingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3469B3288C208900503B39 /* OnboardingProgressBar.swift */; };
 		8B79FCA9288AE822007D35A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B79FCA8288AE822007D35A5 /* AppDelegate.swift */; };
@@ -16,6 +17,15 @@
 		8B79FCB2288AE824007D35A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B79FCB1288AE824007D35A5 /* Assets.xcassets */; };
 		8B79FCB5288AE824007D35A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B79FCB3288AE824007D35A5 /* LaunchScreen.storyboard */; };
 		8B79FCBD288AE83F007D35A5 /* UICollectionView+Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B79FCBC288AE83F007D35A5 /* UICollectionView+Pagination.swift */; };
+		8BA495FF289D61FE00A0E1C9 /* UILabel+LockerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA495FE289D61FE00A0E1C9 /* UILabel+LockerIcon.swift */; };
+		8BA49605289D807C00A0E1C9 /* TextFieldAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA49604289D807C00A0E1C9 /* TextFieldAnimated.swift */; };
+		8BA49607289D869500A0E1C9 /* TextFieldMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA49606289D869500A0E1C9 /* TextFieldMode.swift */; };
+		8BA49609289D86AE00A0E1C9 /* TextFieldModePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA49608289D86AE00A0E1C9 /* TextFieldModePresenterProtocol.swift */; };
+		8BA4960B289D86CB00A0E1C9 /* ReadOnlyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4960A289D86CB00A0E1C9 /* ReadOnlyPresenter.swift */; };
+		8BA4960D289D86E200A0E1C9 /* SecureModePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4960C289D86E200A0E1C9 /* SecureModePresenter.swift */; };
+		8BA4960F289D870100A0E1C9 /* ClearModePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4960E289D870100A0E1C9 /* ClearModePresenter.swift */; };
+		8BA49612289DAA8000A0E1C9 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA49611289DAA8000A0E1C9 /* BaseButton.swift */; };
+		8BA49614289EB44B00A0E1C9 /* FormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA49613289EB44B00A0E1C9 /* FormsViewController.swift */; };
 		8BDF9BFF289158DD008EBDFD /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF9BFE289158DD008EBDFD /* ModalPresenter.swift */; };
 		8BDF9C0128915923008EBDFD /* ModalDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF9C0028915923008EBDFD /* ModalDismisser.swift */; };
 		8BDF9C0328915944008EBDFD /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF9C0228915944008EBDFD /* ModalPresentationController.swift */; };
@@ -25,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B29A5F228B38C0E0004D6E7 /* CashbackBacksideCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashbackBacksideCardView.swift; sourceTree = "<group>"; };
 		8B3469B1288C204400503B39 /* ProgressBarSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarSegment.swift; sourceTree = "<group>"; };
 		8B3469B3288C208900503B39 /* OnboardingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressBar.swift; sourceTree = "<group>"; };
 		8B79FCA5288AE822007D35A5 /* Checking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +47,15 @@
 		8B79FCB4288AE824007D35A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B79FCB6288AE824007D35A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B79FCBC288AE83F007D35A5 /* UICollectionView+Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Pagination.swift"; sourceTree = "<group>"; };
+		8BA495FE289D61FE00A0E1C9 /* UILabel+LockerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LockerIcon.swift"; sourceTree = "<group>"; };
+		8BA49604289D807C00A0E1C9 /* TextFieldAnimated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAnimated.swift; sourceTree = "<group>"; };
+		8BA49606289D869500A0E1C9 /* TextFieldMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMode.swift; sourceTree = "<group>"; };
+		8BA49608289D86AE00A0E1C9 /* TextFieldModePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModePresenterProtocol.swift; sourceTree = "<group>"; };
+		8BA4960A289D86CB00A0E1C9 /* ReadOnlyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlyPresenter.swift; sourceTree = "<group>"; };
+		8BA4960C289D86E200A0E1C9 /* SecureModePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureModePresenter.swift; sourceTree = "<group>"; };
+		8BA4960E289D870100A0E1C9 /* ClearModePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearModePresenter.swift; sourceTree = "<group>"; };
+		8BA49611289DAA8000A0E1C9 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		8BA49613289EB44B00A0E1C9 /* FormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsViewController.swift; sourceTree = "<group>"; };
 		8BDF9BFE289158DD008EBDFD /* ModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
 		8BDF9C0028915923008EBDFD /* ModalDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDismisser.swift; sourceTree = "<group>"; };
 		8BDF9C0228915944008EBDFD /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
@@ -67,6 +87,7 @@
 		8B3469B5288C2C4200503B39 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8BA495FD289D61ED00A0E1C9 /* UILabel+Locker */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -90,6 +111,8 @@
 		8B79FCA7288AE822007D35A5 /* Checking */ = {
 			isa = PBXGroup;
 			children = (
+				8BA49610289DAA7700A0E1C9 /* Button */,
+				8BA49603289D807100A0E1C9 /* Form */,
 				8BDF9C1A2896DA97008EBDFD /* ShadowView */,
 				8BDF9BFD289158BF008EBDFD /* ModalController */,
 				8B3469B5288C2C4200503B39 /* Extensions */,
@@ -103,8 +126,39 @@
 				8B79FCB6288AE824007D35A5 /* Info.plist */,
 				8B79FCBC288AE83F007D35A5 /* UICollectionView+Pagination.swift */,
 				8BDF9C0628915FBF008EBDFD /* ExampleModalController.swift */,
+				8BA49613289EB44B00A0E1C9 /* FormsViewController.swift */,
+				8B29A5F228B38C0E0004D6E7 /* CashbackBacksideCardView.swift */,
 			);
 			path = Checking;
+			sourceTree = "<group>";
+		};
+		8BA495FD289D61ED00A0E1C9 /* UILabel+Locker */ = {
+			isa = PBXGroup;
+			children = (
+				8BA495FE289D61FE00A0E1C9 /* UILabel+LockerIcon.swift */,
+			);
+			path = "UILabel+Locker";
+			sourceTree = "<group>";
+		};
+		8BA49603289D807100A0E1C9 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				8BA49604289D807C00A0E1C9 /* TextFieldAnimated.swift */,
+				8BA49606289D869500A0E1C9 /* TextFieldMode.swift */,
+				8BA49608289D86AE00A0E1C9 /* TextFieldModePresenterProtocol.swift */,
+				8BA4960A289D86CB00A0E1C9 /* ReadOnlyPresenter.swift */,
+				8BA4960C289D86E200A0E1C9 /* SecureModePresenter.swift */,
+				8BA4960E289D870100A0E1C9 /* ClearModePresenter.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		8BA49610289DAA7700A0E1C9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8BA49611289DAA8000A0E1C9 /* BaseButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		8BDF9BFD289158BF008EBDFD /* ModalController */ = {
@@ -197,18 +251,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA49614289EB44B00A0E1C9 /* FormsViewController.swift in Sources */,
+				8BA4960D289D86E200A0E1C9 /* SecureModePresenter.swift in Sources */,
 				8BDF9C1C2896DA9F008EBDFD /* ShadowView.swift in Sources */,
 				8B79FCAD288AE822007D35A5 /* ViewController.swift in Sources */,
+				8BA495FF289D61FE00A0E1C9 /* UILabel+LockerIcon.swift in Sources */,
 				8B3469B4288C208900503B39 /* OnboardingProgressBar.swift in Sources */,
+				8BA49605289D807C00A0E1C9 /* TextFieldAnimated.swift in Sources */,
+				8BA49612289DAA8000A0E1C9 /* BaseButton.swift in Sources */,
 				8BDF9C0728915FBF008EBDFD /* ExampleModalController.swift in Sources */,
 				8BDF9BFF289158DD008EBDFD /* ModalPresenter.swift in Sources */,
 				8B79FCA9288AE822007D35A5 /* AppDelegate.swift in Sources */,
 				8BDF9C0328915944008EBDFD /* ModalPresentationController.swift in Sources */,
+				8BA49607289D869500A0E1C9 /* TextFieldMode.swift in Sources */,
 				8BDF9C0128915923008EBDFD /* ModalDismisser.swift in Sources */,
+				8B29A5F328B38C0E0004D6E7 /* CashbackBacksideCardView.swift in Sources */,
 				8B3469B2288C204400503B39 /* ProgressBarSegment.swift in Sources */,
 				8BDF9C0528915A24008EBDFD /* ModalController.swift in Sources */,
+				8BA49609289D86AE00A0E1C9 /* TextFieldModePresenterProtocol.swift in Sources */,
+				8BA4960B289D86CB00A0E1C9 /* ReadOnlyPresenter.swift in Sources */,
 				8B79FCBD288AE83F007D35A5 /* UICollectionView+Pagination.swift in Sources */,
 				8B79FCAB288AE822007D35A5 /* SceneDelegate.swift in Sources */,
+				8BA4960F289D870100A0E1C9 /* ClearModePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

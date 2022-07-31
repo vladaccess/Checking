@@ -6,16 +6,20 @@
 //
 
 import UIKit
-
+/// Отображение тени с возможностью скругления углов
 class ShadowView: UIView {
 
 	// MARK: - Public properties
+	
+	var cornerRadius: CGFloat {
+		get { _cornerRadius }
+		set { _cornerRadius = newValue }
+	}
 
 	/// Контейнер для контента внутри карточки
 	public let contentView: UIView = {
 		let view = UIView()
 		view.isUserInteractionEnabled = false
-		view.layer.cornerRadius = 16
 		view.layer.masksToBounds = true
 		return view
 	}()
@@ -24,6 +28,7 @@ class ShadowView: UIView {
 
 	private var perimeterShadowLayer: CALayer?
 	private var dropShadowLayer: CALayer?
+	private var _cornerRadius: CGFloat = 16 { didSet { updateCornerRadius() } }
 
 	// MARK: - Lifecycle
 
@@ -55,9 +60,8 @@ class ShadowView: UIView {
 
 	// MARK: - Private Methods
 
-	func setupView() {
+	private func setupView() {
 		backgroundColor = .clear
-		layer.cornerRadius = 16
 
 		contentView.backgroundColor = .white
 		addSubview(contentView)
@@ -68,24 +72,24 @@ class ShadowView: UIView {
 		contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
 		
 		addShadowsIfNeeded()
+		
+		updateCornerRadius()
 	}
 
-	func addShadowsIfNeeded() {
+	private func addShadowsIfNeeded() {
 		perimeterShadowLayer?.removeFromSuperlayer()
 		dropShadowLayer?.removeFromSuperlayer()
 
 		let perimeterShadowLayer = CALayer()
 		perimeterShadowLayer.shadowOpacity = 0.04
 		perimeterShadowLayer.shadowRadius = 10
-		perimeterShadowLayer.cornerRadius = 16
 		perimeterShadowLayer.shadowOffset = .zero
 		perimeterShadowLayer.needsDisplayOnBoundsChange = true
 		
 		let dropShadowLayer = CALayer()
 		dropShadowLayer.shadowOpacity = 0.04
 		dropShadowLayer.shadowRadius = 10
-		dropShadowLayer.cornerRadius = 16
-		dropShadowLayer.shadowOffset = CGSize(width: 0, height: 4)
+		dropShadowLayer.shadowOffset = CGSize(width: 0, height: 8)
 		dropShadowLayer.needsDisplayOnBoundsChange = true
 		
 		perimeterShadowLayer.backgroundColor = UIColor.white.cgColor
@@ -102,5 +106,12 @@ class ShadowView: UIView {
 		
 		self.perimeterShadowLayer = perimeterShadowLayer
 		self.dropShadowLayer = dropShadowLayer
+	}
+	
+	private func updateCornerRadius() {
+		contentView.layer.cornerRadius = _cornerRadius
+		layer.cornerRadius = _cornerRadius
+		perimeterShadowLayer?.cornerRadius = _cornerRadius
+		dropShadowLayer?.cornerRadius = _cornerRadius
 	}
 }
